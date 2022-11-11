@@ -1,41 +1,89 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+    margin-top: 30px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__header {
+    color: white;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.posts__section {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.card {
-  padding: 2em;
+.pages__section {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
 }
 
-.read-the-docs {
-  color: #888;
+.pages__section > button {
+    margin-left: 15px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pages__section > p {
+    color: white;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.blog__posts {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.posts {
+    width: 90%;
+}
+
+.post {
+    background-color: rgba(56, 53, 53, 0.76);
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.post > p {
+    padding: 5px;
+}
+
+.post > p:nth-child(1) {
+    color: #fff;
+}
+
+.post > p:nth-child(2) {
+    color: gray;
+}
+
+.post > p:nth-child(3) {
+    color: gray;
+}
+
+
+@media screen and (max-width: 600px) {
+    .app {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .app__header {
+        font-size: 25px;
+    }
+    .posts {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
