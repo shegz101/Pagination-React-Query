@@ -16,11 +16,15 @@ const Posts = () => {
     return (
         <div className="posts__section">
             <div className="pages__section">
-                <button>1</button>
                 <button>prev</button>
-                <p>{page}</p>
-                <button>Next</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <p>...</p>
                 <button>10</button>
+                <button>Next</button>
             </div>
 
             <div className='blog__posts'>
